@@ -18,4 +18,8 @@ spell 拼写检查   cal 日历
 ###IO重定向
 linux中数据流可分为3类，数据输入，数据输出和标准错误输出。文件描述指针分别为0，1，2。结果会被重定向到显示器。
 
+查看内存信息： cat /proc/meninfo
+查看cpu信息：cat /proc/cpuinfo
+arch：查看架构
+查看系统当前版本：cat /proc/issue
 
