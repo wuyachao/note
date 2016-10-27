@@ -23,3 +23,15 @@ linux中数据流可分为3类，数据输入，数据输出和标准错误输�
 arch：查看架构
 查看系统当前版本：cat /proc/issue
 
+gawk '{print $5}' online_rate_access.log  //过滤第5列的值
+
+fmt:重排文件
+cut:文件剪切，从指定文件选定指定的行
+head:显示文件前面部分
+more:分屏查看
+diff:文件内容比较
+csplit:对指定文件进行切割
+uniq:显示文件重复的行
+tail:读取文件的末尾
+less:前后翻阅内容
+
