@@ -18,6 +18,7 @@ spell 拼写检查   cal 日历
 ###IO重定向
 linux中数据流可分为3类，数据输入，数据输出和标准错误输出。文件描述指针分别为0，1，2。结果会被重定向到显示器。
 
+<<<<<<< HEAD
 多个命令用; 号隔开
 > echo hello;pwd;ls
 
@@ -38,4 +39,21 @@ cal -j:显示距离1月1日的天数
 ###内存使用情况查询
 cat /proc/meminfo
 
+=======
+查看内存信息： cat /proc/meninfo
+查看cpu信息：cat /proc/cpuinfo
+arch：查看架构
+查看系统当前版本：cat /proc/issue
+
+gawk '{print $5}' online_rate_access.log  //过滤第5列的值
+
+fmt:重排文件
+cut:文件剪切，从指定文件选定指定的行
+head:显示文件前面部分
+more:分屏查看
+diff:文件内容比较
+csplit:对指定文件进行切割
+uniq:显示文件重复的行
+tail:读取文件的末尾
+less:前后翻阅内容
 
