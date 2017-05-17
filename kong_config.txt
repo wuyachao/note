@@ -1,4 +1,4 @@
-table: 0x0c290168 {
+{
    [nginx_acc_logs] => "/usr/local/kong/logs/access.log"
    [cassandra_lb_policy] => "RoundRobin"
    [lua_code_cache] => "on"
@@ -20,13 +20,12 @@ table: 0x0c290168 {
    [pg_port] => 5432
    [cluster_ttl_on_failure] => 3600
    [nginx_err_logs] => "/usr/local/kong/logs/error.log"
-   [plugins] => table: 0x0c290168 {
+   [plugins] => table: 0x194126f8 {
                   [syslog] => true
                   [ldap-auth] => true
                   [rate-limiting] => true
                   [correlation-id] => true
                   [jwt] => true
-                  [request-size-limiting] => true
                   [runscope] => true
                   [request-transformer] => true
                   [http-log] => true
@@ -43,7 +42,7 @@ table: 0x0c290168 {
                   [file-log] => true
                   [ip-restriction] => true
                   [datadog] => true
-                  [stat] => true
+                  [request-size-limiting] => true
                   [bot-detection] => true
                   [aws-lambda] => true
                   [statsd] => true
@@ -52,7 +51,7 @@ table: 0x0c290168 {
                 }
    [nginx_optimizations] => true
    [cassandra_keyspace] => "kong"
-   [cassandra_data_centers] => table: 0x0c290168 {
+   [cassandra_data_centers] => table: 0x194126f8 {
                                  [1] => "dc1:2"
                                  [2] => "dc2:3"
                                }
@@ -67,7 +66,7 @@ table: 0x0c290168 {
    [log_level] => "notice"
    [mem_cache_size] => "128m"
    [nginx_worker_processes] => "auto"
-   [cassandra_contact_points] => table: 0x0c290168 {
+   [cassandra_contact_points] => table: 0x194126f8 {
                                    [1] => "127.0.0.1"
                                  }
    [proxy_ip] => "0.0.0.0"
@@ -91,8 +90,7 @@ table: 0x0c290168 {
    [admin_ssl_ip] => "0.0.0.0"
    [admin_ssl_cert_key] => "/usr/local/kong/ssl/admin-kong-default.key"
    [nginx_daemon] => "on"
-   [custom_plugins] => table: 0x0c290168 {
-                         [1] => "stat"
+   [custom_plugins] => table: 0x194126f8 {
                        }
    [cassandra_ssl] => false
    [serf_pid] => "/usr/local/kong/pids/serf.pid"
@@ -105,7 +103,7 @@ table: 0x0c290168 {
    [cassandra_ssl_verify] => false
    [prefix] => "/usr/local/kong"
    [cassandra_repl_strategy] => "SimpleStrategy"
-   [dns_resolver] => table: 0x0c290168 {
+   [dns_resolver] => table: 0x194126f8 {
                      }
    [serf_event] => "/usr/local/kong/serf/serf_event.sh"
    [proxy_ssl_ip] => "0.0.0.0"
