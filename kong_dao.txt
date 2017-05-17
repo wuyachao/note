@@ -1,0 +1,1840 @@
+table: 0x107ee4d8 {
+[db] => table: 0x107ee4d8 {
+      [query_options] => table: 0x10813ea8 {
+                           [host] => "127.0.0.1"
+                           [database] => "kong"
+                           [ssl_verify] => false
+                           [user] => "kong"
+                           [ssl] => false
+                           [port] => 5432
+                         }
+    }
+[kong_config] => table: 0x107ee4d8 {
+   [nginx_acc_logs] => "/usr/local/kong/logs/access.log"
+   [cassandra_lb_policy] => "RoundRobin"
+   [lua_code_cache] => "on"
+   [serf_path] => "serf"
+   [nginx_kong_conf] => "/usr/local/kong/nginx-kong.conf"
+   [proxy_listen] => "0.0.0.0:8000"
+   [ssl_cert] => "/usr/local/kong/ssl/kong-default.crt"
+   [lua_ssl_verify_depth] => 1
+   [admin_listen] => "0.0.0.0:8001"
+   [admin_listen_ssl] => "0.0.0.0:8444"
+   [ssl_cert_default] => "/usr/local/kong/ssl/kong-default.crt"
+   [cassandra_repl_factor] => 1
+   [cluster_profile] => "wan"
+   [upstream_keepalive] => 60
+   [lua_package_cpath] => ""
+   [cassandra_consistency] => "ONE"
+   [admin_ssl_cert_default] => "/usr/local/kong/ssl/admin-kong-default.crt"
+   [pg_host] => "127.0.0.1"
+   [pg_port] => 5432
+   [cluster_ttl_on_failure] => 3600
+   [nginx_err_logs] => "/usr/local/kong/logs/error.log"
+   [plugins] => table: 0x107e0210 {
+          [syslog] => true
+          [ldap-auth] => true
+          [rate-limiting] => true
+          [correlation-id] => true
+          [jwt] => true
+          [request-size-limiting] => true
+          [runscope] => true
+          [request-transformer] => true
+          [http-log] => true
+          [loggly] => true
+          [response-transformer] => true
+          [basic-auth] => true
+          [tcp-log] => true
+          [key-auth] => true
+          [oauth2] => true
+          [acl] => true
+          [galileo] => true
+          [udp-log] => true
+          [cors] => true
+          [file-log] => true
+          [ip-restriction] => true
+          [datadog] => true
+          [stat] => true
+          [bot-detection] => true
+          [aws-lambda] => true
+          [statsd] => true
+          [response-ratelimiting] => true
+          [hmac-auth] => true
+        }
+   [nginx_optimizations] => true
+   [cassandra_keyspace] => "kong"
+   [cassandra_data_centers] => table: 0x107e0210 {
+                                 [1] => "dc1:2"
+                                 [2] => "dc2:3"
+                               }
+   [ssl_cert_key] => "/usr/local/kong/ssl/kong-default.key"
+   [lua_package_path] => "?/init.lua;./kong/?.lua"
+   [cassandra_username] => "kong"
+   [admin_ssl] => true
+   [ssl_cert_key_default] => "/usr/local/kong/ssl/kong-default.key"
+   [anonymous_reports] => true
+   [kong_env] => "/usr/local/kong/.kong_env"
+   [serf_log] => "/usr/local/kong/logs/serf.log"
+   [log_level] => "notice"
+   [mem_cache_size] => "128m"
+   [nginx_worker_processes] => "auto"
+   [cassandra_contact_points] => table: 0x107e0210 {
+                                   [1] => "127.0.0.1"
+                                 }
+   [proxy_ip] => "0.0.0.0"
+   [pg_ssl] => false
+   [proxy_ssl_port] => 8443
+   [pg_database] => "kong"
+   [admin_ip] => "0.0.0.0"
+   [ssl_cert_csr_default] => "/usr/local/kong/ssl/kong-default.csr"
+   [nginx_conf] => "/usr/local/kong/nginx.conf"
+   [cassandra_port] => 9042
+   [serf_node_id] => "/usr/local/kong/serf/serf.id"
+   [nginx_pid] => "/usr/local/kong/pids/nginx.pid"
+   [nginx_admin_acc_logs] => "/usr/local/kong/logs/admin_access.log"
+   [admin_ssl_cert_csr_default] => "/usr/local/kong/ssl/admin-kong-default.csr"
+   [admin_port] => 8001
+   [proxy_listen_ssl] => "0.0.0.0:8443"
+   [cluster_listen] => "0.0.0.0:7946"
+   [admin_ssl_cert] => "/usr/local/kong/ssl/admin-kong-default.crt"
+   [dns_hostsfile] => "/etc/hosts"
+   [admin_ssl_cert_key_default] => "/usr/local/kong/ssl/admin-kong-default.key"
+   [admin_ssl_ip] => "0.0.0.0"
+   [admin_ssl_cert_key] => "/usr/local/kong/ssl/admin-kong-default.key"
+   [nginx_daemon] => "on"
+   [custom_plugins] => table: 0x107e0210 {
+                         [1] => "stat"
+                       }
+   [cassandra_ssl] => false
+   [serf_pid] => "/usr/local/kong/pids/serf.pid"
+   [database] => "postgres"
+   [ssl] => true
+   [cassandra_timeout] => 5000
+   [pg_user] => "kong"
+   [lua_socket_pool_size] => 30
+   [pg_ssl_verify] => false
+   [cassandra_ssl_verify] => false
+   [prefix] => "/usr/local/kong"
+   [cassandra_repl_strategy] => "SimpleStrategy"
+   [dns_resolver] => table: 0x107e0210 {
+                     }
+   [serf_event] => "/usr/local/kong/serf/serf_event.sh"
+   [proxy_ssl_ip] => "0.0.0.0"
+   [admin_ssl_port] => 8444
+   [proxy_port] => 8000
+   [cluster_listen_rpc] => "127.0.0.1:7373"
+ }
+[daos] => table: 0x107ee4d8 {
+[oauth2_credentials] => table: 0x107ee5c8 {
+[db] => Object {                                                *table: 0x10813ea8
+      }
+[constraints] => Object {
+[unique] => table: 0x10a69b50 {
+[client_id] => table: 0x10a69bd8 {
+[schema] => table: 0x10a69d10 {
+      [marshall_event] => function: 0x10a48e58
+      [primary_key] => table: 0x10a4b838 {
+                         [1] => "id"
+                       }
+      [fields] => table: 0x10a4b838 {
+                    [consumer_id] => table: 0x10a48dc8 {
+                                       [type] => "id"
+                                       [required] => true
+                                       [foreign] => "consumers:id"
+                                     }
+                    [client_id] => table: 0x10a48dc8 {
+                                     [type] => "string"
+                                     [required] => false
+                                     [func] => function: 0x10a4b7b8
+                                     [unique] => true
+                                   }
+                    [id] => table: 0x10a48dc8 {
+                              [type] => "id"
+                              [dao_insert_value] => true
+                            }
+                    [created_at] => table: 0x10a48dc8 {
+                                      [type] => "timestamp"
+                                      [dao_insert_value] => true
+                                      [immutable] => true
+                                    }
+                    [redirect_uri] => table: 0x10a48dc8 {
+                                        [type] => "array"
+                                        [required] => true
+                                        [func] => function: 0x10a4b7f8
+                                      }
+                    [name] => table: 0x10a48dc8 {
+                                [type] => "string"
+                                [required] => true
+                              }
+                    [client_secret] => table: 0x10a48dc8 {
+                                         [type] => "string"
+                                         [required] => false
+                                         [func] => function: 0x10a4b7b8
+                                         [unique] => true
+                                       }
+                  }
+              [table] => "oauth2_credentials"
+            }
+            [table] => "oauth2_credentials"
+          }
+           [client_secret] => table: 0x10a69bd8 {
+                                [schema] => table: 0x10a69da8 {                                                                                                          *table: 0x10a4b838
+                                            }
+                                [table] => "oauth2_credentials"
+                              }
+         }
+     [cascade] => table: 0x10a69b50 {
+        [oauth2_authorization_codes] => table: 0x10a6c558 {
+              [col] => "id"
+              [f_col] => "credential_id"
+              [schema] => table: 0x10a69b78 {
+                    [primary_key] => table: 0x10a4b860 {
+                                       [1] => "id"
+                                     }
+                    [fields] => table: 0x10a4b860 {
+                          [scope] => table: 0x10a4bce0 {
+                                       [type] => "string"
+                                     }
+                          [code] => table: 0x10a4bce0 {
+                                      [unique] => true
+                                      [type] => "string"
+                                      [required] => false
+                                      [func] => function: 0x10a4b7b8
+                                      [immutable] => true
+                                    }
+                          [id] => table: 0x10a4bce0 {
+                                    [type] => "id"
+                                    [dao_insert_value] => true
+                                  }
+                          [authenticated_userid] => table: 0x10a4bce0 {
+                                                      [type] => "string"
+                                                      [required] => false
+                                                    }
+                          [credential_id] => table: 0x10a4bce0 {
+                                               [type] => "id"
+                                               [required] => true
+                                               [foreign] => "oauth2_credentials:id"
+                                             }
+                          [created_at] => table: 0x10a4bce0 {
+                                            [type] => "timestamp"
+                                            [dao_insert_value] => true
+                                            [immutable] => true
+                                          }
+                          [api_id] => table: 0x10a4bce0 {
+                                        [type] => "id"
+                                        [required] => false
+                                        [foreign] => "apis:id"
+                                      }
+                        }
+                            [table] => "oauth2_authorization_codes"
+                          }
+  [table] => "oauth2_authorization_codes"
+                            }
+        [oauth2_tokens] => table: 0x10a6c558 {
+             [col] => "id"
+             [f_col] => "credential_id"
+             [schema] => table: 0x10a6c7a8 {
+               [marshall_event] => function: 0x10a4c928
+               [primary_key] => table: 0x10a4c190 {
+                                  [1] => "id"
+                                }
+               [fields] => table: 0x10a4c190 {
+                             [expires_in] => table: 0x10a4c258 {
+                                               [type] => "number"
+                                               [required] => true
+                                             }
+                             [api_id] => table: 0x10a4c258 {
+                                           [type] => "id"
+                                           [required] => false
+                                           [foreign] => "apis:id"
+                                         }
+                             [id] => table: 0x10a4c258 {
+                                       [type] => "id"
+                                       [dao_insert_value] => true
+                                     }
+                             [credential_id] => table: 0x10a4c258 {
+                                                  [type] => "id"
+                                                  [required] => true
+                                                  [foreign] => "oauth2_credentials:id"
+                                                }
+                             [created_at] => table: 0x10a4c258 {
+                                               [type] => "timestamp"
+                                               [dao_insert_value] => true
+                                               [immutable] => true
+                                             }
+                             [refresh_token] => table: 0x10a4c258 {
+                                                  [type] => "string"
+                                                  [required] => false
+                                                  [unique] => true
+                                                }
+                             [token_type] => table: 0x10a4c258 {
+                                               [type] => "string"
+                                               [required] => true
+                                               [enum] => table: 0x10a4c588 {
+                                                           [1] => "bearer"
+                                                         }
+                                               [default] => "bearer"
+                                             }
+                             [scope] => table: 0x10a4c258 {
+                                          [type] => "string"
+                                        }
+                             [access_token] => table: 0x10a4c258 {
+                                                 [type] => "string"
+                                                 [required] => false
+                                                 [func] => function: 0x10a4b7b8
+                                                 [unique] => true
+                                               }
+                             [authenticated_userid] => table: 0x10a4c258 {
+                                                         [type] => "string"
+                                                         [required] => false
+                                                       }
+                           }
+                           [table] => "oauth2_tokens"
+                         }
+                             [table] => "oauth2_tokens"
+                           }
+      }
+     [foreign] => table: 0x10a69b50 {
+        [consumer_id] => table: 0x10a69bb0 {
+               [f_entity] => "consumers"
+               [col] => "id"
+               [schema] => table: 0x10a69c48 {
+                     [marshall_event] => function: 0x1081bd00
+                     [primary_key] => table: 0x1081c0c8 {
+                                        [1] => "id"
+                                      }
+                     [fields] => table: 0x1081c0c8 {
+                           [custom_id] => table: 0x1081b608 {
+                                            [type] => "string"
+                                            [func] => function: 0x1081c470
+                                            [unique] => true
+                                          }
+                           [username] => table: 0x1081b608 {
+                                           [type] => "string"
+                                           [func] => function: 0x1081c470
+                                           [unique] => true
+                                         }
+                           [created_at] => table: 0x1081b608 {
+                                             [type] => "timestamp"
+                                             [required] => true
+                                             [dao_insert_value] => true
+                                             [immutable] => true
+                                           }
+                           [id] => table: 0x1081b608 {
+                                     [type] => "id"
+                                     [required] => true
+                                     [dao_insert_value] => true
+                                   }
+                         }
+                     [table] => "consumers"
+                   }
+               [table] => "consumers"
+             }
+      }
+   }
+              [schema] => Object {                                                    *table: 0x10a4b838
+                          }
+              [events_handler] => Object {                                                            *Object
+                                  }
+              [model_mt] => Object {
+                            }
+              [table] => "oauth2_credentials"
+            }
+            [jwt_secrets] => table: 0x107ee5c8 {                               *Object
+                             }
+            [upstreams] => table: 0x107ee5c8 {                             *Object
+                           }
+            [keyauth_credentials] => table: 0x107ee5c8 {                                       *Object
+                                     }
+            [oauth2_authorization_codes] => table: 0x107ee5c8 {                                              *Object
+                                            }
+            [ssl_servers_names] => table: 0x107ee5c8 {                                     *Object
+                                   }
+            [acls] => table: 0x107ee5c8 {                        *Object
+                      }
+            [ssl_certificates] => table: 0x107ee5c8 {                                    *Object
+                                  }
+            [apis] => table: 0x107ee5c8 {                        *Object
+                      }
+            [hmacauth_credentials] => table: 0x107ee5c8 {                                        *Object
+                                      }
+            [consumers] => table: 0x107ee5c8 {                             *Object
+                           }
+            [oauth2_tokens] => table: 0x107ee5c8 {                                 *Object
+                               }
+            [targets] => table: 0x107ee5c8 {                           *Object
+                         }
+            [nodes] => table: 0x107ee5c8 {                         *Object
+                       }
+            [basicauth_credentials] => table: 0x107ee5c8 {                                         *Object
+                                       }
+            [plugins] => table: 0x107ee5c8 {                           *Object
+                         }
+          }
+[plugin_names] => table: 0x107ee4d8 {                    *table: 0x107eaef8
+                  }
+[db_type] => "postgres"
+[additional_tables] => table: 0x107ee4d8 {
+                         [1] => "ratelimiting_metrics"
+                         [2] => "response_ratelimiting_metrics"
+}
+```
+events:
+```
+Object {
+   [_mediator] => Object {
+                    [getSubscriber] => function: 0x0da040d0
+                    [channel] => table: 0x0da03c80 {
+                                   [getSubscriber] => function: 0x0da03f90
+                                   [stopped] => false
+                                   [callbacks] => table: 0x0da03d70 {
+                                                  }
+                                   [namespace] => "root"
+                                   [hasChannel] => function: 0x0da03ff0
+                                   [publish] => function: 0x0da04050
+                                   [removeSubscriber] => function: 0x0da04030
+                                   [setPriority] => function: 0x0da03fb0
+                                   [channels] => table: 0x0da03d70 {
+                                                 }
+                                   [getChannel] => function: 0x0da04010
+                                   [addChannel] => function: 0x0da03fd0
+                                   [addSubscriber] => function: 0x0da03f70
+                                 }
+                    [getChannel] => function: 0x0da04090
+                    [publish] => function: 0x0da04110
+                    [removeSubscriber] => function: 0x0da040f0
+                    [subscribe] => function: 0x0da040b0
+                  }
+2017/05/17 11:40:55 [error] 30350#0: [lua] toolsfortest.lua:29: print_f(): }
+   ------=========------------
+2017/05/17 11:40:55 [error] 30350#0: [lua] toolsfortest.lua:27: print_f(): table: 0x0431a328 {
+   [dns] => table: 0x0431a328 {
+              [TYPE_NS] => 2
+              [resolve] => function: 0x0cda4a08
+              [stdError] => function: 0x0cda4ae0
+              [TYPE_SPF] => 99
+              [TYPE_A] => 1
+              [init] => function: 0x0cd541a8
+              [TYPE_AAAA] => 28
+              [TYPE_SRV] => 33
+              [TYPE_MX] => 15
+              [connect] => function: 0x0cda4d00
+              [setpeername] => function: 0x0cda4d20
+              [TYPE_TXT] => 16
+              [purgeCache] => function: 0x0cd54f18
+              [TYPE_PTR] => 12
+              [TYPE_CNAME] => 5
+              [TYPE_LAST] => -1
+              [toip] => function: 0x0cda4c48
+            }
+   [loaded_plugins] => table: 0x0431a328 {
+                         [1] => table: 0x0dce0378 {
+                                  [handler] => table: 0x0de3bc00 {
+                                                 [_name] => "bot-detection"
+                                               }
+                                  [name] => "bot-detection"
+                                  [schema] => table: 0x0de3bc00 {
+                                                [fields] => table: 0x0de3b6e8 {
+                                                              [blacklist] => table: 0x0de3b878 {
+                                                                               [type] => "array"
+                                                                               [func] => function: 0x0de3c258
+                                                                             }
+                                                              [whitelist] => table: 0x0de3b878 {
+                                                                               [type] => "array"
+                                                                               [func] => function: 0x0de3c258
+                                                                             }
+                                                            }
+                                                [no_consumer] => true
+                                              }
+                                }
+                         [2] => table: 0x0dce0378 {
+                                  [handler] => table: 0x0de0a680 {                                                 *Object
+                                               }
+                                  [name] => "cors"
+                                  [schema] => table: 0x0de0a680 {
+                                                [fields] => table: 0x0de09638 {
+                                                              [origins] => table: 0x0de09b58 {
+                                                                             [type] => "array"
+                                                                           }
+                                                              [credentials] => table: 0x0de09b58 {
+                                                                                 [type] => "boolean"
+                                                                                 [default] => false
+                                                                               }
+                                                              [exposed_headers] => table: 0x0de09b58 {
+                                                                                     [type] => "array"
+                                                                                   }
+                                                              [methods] => table: 0x0de09b58 {
+                                                                             [type] => "array"
+                                                                             [enum] => table: 0x0de09d68 {
+                                                                                         [1] => "HEAD"
+                                                                                         [2] => "GET"
+                                                                                         [3] => "POST"
+                                                                                         [4] => "PUT"
+                                                                                         [5] => "PATCH"
+                                                                                         [6] => "DELETE"
+                                                                                       }
+                                                                           }
+                                                              [max_age] => table: 0x0de09b58 {
+                                                                             [type] => "number"
+                                                                           }
+                                                              [preflight_continue] => table: 0x0de09b58 {
+                                                                                        [type] => "boolean"
+                                                                                        [default] => false
+                                                                                      }
+                                                              [headers] => table: 0x0de09b58 {
+                                                                             [type] => "array"
+                                                                           }
+                                                            }
+                                                [no_consumer] => true
+                                              }
+                                }
+                         [3] => table: 0x0dce0378 {
+                                  [handler] => table: 0x0dd79b68 {                                                 *Object
+                                               }
+                                  [name] => "jwt"
+                                  [schema] => table: 0x0dd79b68 {
+                                                [fields] => table: 0x0dd793a0 {
+                                                              [key_claim_name] => table: 0x0dd793c8 {
+                                                                                    [type] => "string"
+                                                                                    [default] => "iss"
+                                                                                  }
+                                                              [secret_is_base64] => table: 0x0dd793c8 {
+                                                                                      [type] => "boolean"
+                                                                                      [default] => false
+                                                                                    }
+                                                              [uri_param_names] => table: 0x0dd793c8 {
+                                                                                     [type] => "array"
+                                                                                     [default] => table: 0x0dd78c30 {
+                                                                                                    [1] => "jwt"
+                                                                                                  }
+                                                                                   }
+                                                              [claims_to_verify] => table: 0x0dd793c8 {
+                                                                                      [type] => "array"
+                                                                                      [enum] => table: 0x0dd78a10 {
+                                                                                                  [1] => "exp"
+                                                                                                  [2] => "nbf"
+                                                                                                }
+                                                                                    }
+                                                              [anonymous] => table: 0x0dd793c8 {
+                                                                               [type] => "string"
+                                                                               [func] => function: 0x0dd79360
+                                                                               [default] => ""
+                                                                             }
+                                                            }
+                                                [no_consumer] => true
+                                              }
+                                }
+                         [4] => table: 0x0dce0378 {
+                                  [handler] => table: 0x0ddc4820 {                                                 *Object
+                                               }
+                                  [name] => "key-auth"
+                                  [schema] => table: 0x0ddc4820 {
+                                                [fields] => table: 0x0ddc4638 {
+                                                              [hide_credentials] => table: 0x0ddc4c00 {
+                                                                                      [type] => "boolean"
+                                                                                      [default] => false
+                                                                                    }
+                                                              [key_names] => table: 0x0ddc4c00 {
+                                                                               [type] => "array"
+                                                                               [required] => true
+                                                                               [func] => function: 0x0ddc52c8
+                                                                               [default] => function: 0x0ddc52e8
+                                                                             }
+                                                              [anonymous] => table: 0x0ddc4c00 {
+                                                                               [type] => "string"
+                                                                               [func] => function: 0x0ddc5288
+                                                                               [default] => ""
+                                                                             }
+                                                            }
+                                                [no_consumer] => true
+                                              }
+                                }
+                         [5] => table: 0x0dce0378 {
+                                  [handler] => table: 0x0ddd7f88 {                                                 *Object
+                                               }
+                                  [name] => "oauth2"
+                                  [schema] => table: 0x0ddd7f88 {
+                                                [no_consumer] => true
+                                                [fields] => table: 0x0ddce9d0 {
+                                                              [mandatory_scope] => table: 0x0ddd7350 {
+                                                                                     [type] => "boolean"
+                                                                                     [required] => true
+                                                                                     [func] => function: 0x0ddce9b0
+                                                                                     [default] => false
+                                                                                   }
+                                                              [token_expiration] => table: 0x0ddd7350 {
+                                                                                      [type] => "number"
+                                                                                      [required] => true
+                                                                                      [default] => 7200
+                                                                                    }
+                                                              [anonymous] => table: 0x0ddd7350 {
+                                                                               [type] => "string"
+                                                                               [func] => function: 0x0ddce148
+                                                                               [default] => ""
+                                                                             }
+                                                              [enable_implicit_grant] => table: 0x0ddd7350 {
+                                                                                           [type] => "boolean"
+                                                                                           [required] => true
+                                                                                           [default] => false
+                                                                                         }
+                                                              [scopes] => table: 0x0ddd7350 {
+                                                                            [type] => "array"
+                                                                            [required] => false
+                                                                          }
+                                                              [provision_key] => table: 0x0ddd7350 {
+                                                                                   [unique] => true
+                                                                                   [required] => false
+                                                                                   [func] => function: 0x0ddce990
+                                                                                   [type] => "string"
+                                                                                 }
+                                                              [hide_credentials] => table: 0x0ddd7350 {
+                                                                                      [type] => "boolean"
+                                                                                      [default] => false
+                                                                                    }
+                                                              [enable_password_grant] => table: 0x0ddd7350 {
+                                                                                           [type] => "boolean"
+                                                                                           [required] => true
+                                                                                           [default] => false
+                                                                                         }
+                                                              [accept_http_if_already_terminated] => table: 0x0ddd7350 {
+                                                                                                       [type] => "boolean"
+                                                                                                       [required] => false
+                                                                                                       [default] => false
+                                                                                                     }
+                                                              [global_credentials] => table: 0x0ddd7350 {
+                                                                                        [type] => "boolean"
+                                                                                        [default] => false
+                                                                                      }
+                                                              [enable_client_credentials] => table: 0x0ddd7350 {
+                                                                                               [type] => "boolean"
+                                                                                               [required] => true
+                                                                                               [default] => false
+                                                                                             }
+                                                              [enable_authorization_code] => table: 0x0ddd7350 {
+                                                                                               [type] => "boolean"
+                                                                                               [required] => true
+                                                                                               [default] => false
+                                                                                             }
+                                                            }
+                                                [self_check] => function: 0x0ddce1f8
+                                              }
+                                }
+                         [6] => table: 0x0dce0378 {
+                                  [handler] => table: 0x0dd19700 {                                                 *Object
+                                               }
+                                  [name] => "ldap-auth"
+                                  [schema] => table: 0x0dd19700 {
+                                                [fields] => table: 0x0dd18960 {
+                                                              [ldap_port] => table: 0x0dd17e68 {
+                                                                               [type] => "number"
+                                                                               [required] => true
+                                                                             }
+                                                              [cache_ttl] => table: 0x0dd17e68 {
+                                                                               [type] => "number"
+                                                                               [required] => true
+                                                                               [default] => 60
+                                                                             }
+                                                              [anonymous] => table: 0x0dd17e68 {
+                                                                               [type] => "string"
+                                                                               [func] => function: 0x0dd17500
+                                                                               [default] => ""
+                                                                             }
+                                                              [timeout] => table: 0x0dd17e68 {
+                                                                             [type] => "number"
+                                                                             [default] => 10000
+                                                                           }
+                                                              [start_tls] => table: 0x0dd17e68 {
+                                                                               [type] => "boolean"
+                                                                               [required] => true
+                                                                               [default] => false
+                                                                             }
+                                                              [hide_credentials] => table: 0x0dd17e68 {
+                                                                                      [type] => "boolean"
+                                                                                      [default] => false
+                                                                                    }
+                                                              [ldap_host] => table: 0x0dd17e68 {
+                                                                               [type] => "string"
+                                                                               [required] => true
+                                                                             }
+                                                              [base_dn] => table: 0x0dd17e68 {
+                                                                             [type] => "string"
+                                                                             [required] => true
+                                                                           }
+                                                              [verify_ldap_host] => table: 0x0dd17e68 {
+                                                                                      [type] => "boolean"
+                                                                                      [required] => true
+                                                                                      [default] => false
+                                                                                    }
+                                                              [keepalive] => table: 0x0dd17e68 {
+                                                                               [type] => "number"
+                                                                               [default] => 60000
+                                                                             }
+                                                              [attribute] => table: 0x0dd17e68 {
+                                                                               [type] => "string"
+                                                                               [required] => true
+                                                                             }
+                                                            }
+                                                [no_consumer] => true
+                                              }
+                                }
+                         [7] => table: 0x0dce0378 {
+                                  [handler] => table: 0x0ddb9488 {                                                 *Object
+                                               }
+                                  [name] => "basic-auth"
+                                  [schema] => table: 0x0ddb9488 {
+                                                [fields] => table: 0x0ddb9b28 {
+                                                              [anonymous] => table: 0x0ddb93e0 {
+                                                                               [type] => "string"
+                                                                               [func] => function: 0x0ddb9ae8
+                                                                               [default] => ""
+                                                                             }
+                                                              [hide_credentials] => table: 0x0ddb93e0 {
+                                                                                      [type] => "boolean"
+                                                                                      [default] => false
+                                                                                    }
+                                                            }
+                                                [no_consumer] => true
+                                              }
+                                }
+                         [8] => table: 0x0dce0378 {
+                                  [handler] => table: 0x0de7a308 {                                                 *Object
+                                               }
+                                  [name] => "hmac-auth"
+                                  [schema] => table: 0x0de7a308 {
+                                                [fields] => table: 0x0de79df8 {
+                                                              [hide_credentials] => table: 0x0de79e20 {
+                                                                                      [type] => "boolean"
+                                                                                      [default] => false
+                                                                                    }
+                                                              [anonymous] => table: 0x0de79e20 {
+                                                                               [type] => "string"
+                                                                               [func] => function: 0x0de758a0
+                                                                               [default] => ""
+                                                                             }
+                                                              [clock_skew] => table: 0x0de79e20 {
+                                                                                [type] => "number"
+                                                                                [func] => function: 0x0de79dd8
+                                                                                [default] => 300
+                                                                              }
+                                                            }
+                                                [no_consumer] => true
+                                              }
+                                }
+                         [9] => table: 0x0dce0378 {
+                                  [handler] => table: 0x0de1c0d8 {                                                 *Object
+                                               }
+                                  [name] => "ip-restriction"
+                                  [schema] => table: 0x0de1c0d8 {
+                                                [fields] => table: 0x0de1c9e0 {
+                                                              [blacklist] => table: 0x0de1ce30 {
+                                                                               [type] => "array"
+                                                                               [func] => function: 0x0de1c8f8
+                                                                             }
+                                                              [whitelist] => table: 0x0de1ce30 {
+                                                                               [type] => "array"
+                                                                               [func] => function: 0x0de1c8f8
+                                                                             }
+                                                            }
+                                                [self_check] => function: 0x0de1c938
+                                              }
+                                }
+                         [10] => table: 0x0dce0378 {
+                                   [handler] => table: 0x0de32ee0 {                                                  *Object
+                                                }
+                                   [name] => "request-size-limiting"
+                                   [schema] => table: 0x0de32ee0 {
+                                                 [fields] => table: 0x0de32bf8 {
+                                                               [allowed_payload_size] => table: 0x0de32a48 {
+                                                                                           [type] => "number"
+                                                                                           [default] => 128
+                                                                                         }
+                                                             }
+                                               }
+                                 }
+                         [11] => table: 0x0dce0378 {
+                                   [handler] => table: 0x0dddc830 {                                                  *Object
+                                                }
+                                   [name] => "acl"
+                                   [schema] => table: 0x0dddc830 {
+                                                 [no_consumer] => true
+                                                 [fields] => table: 0x0dddc138 {
+                                                               [blacklist] => table: 0x0dddbef8 {
+                                                                                [type] => "array"
+                                                                              }
+                                                               [whitelist] => table: 0x0dddbef8 {
+                                                                                [type] => "array"
+                                                                              }
+                                                             }
+                                                 [self_check] => function: 0x0dddc7c0
+                                               }
+                                 }
+                         [12] => table: 0x0dce0378 {
+                                   [handler] => table: 0x0dd60350 {                                                  *Object
+                                                }
+                                   [name] => "rate-limiting"
+                                   [schema] => table: 0x0dd60350 {
+                                                 [fields] => table: 0x0dd5f3a8 {
+                                                               [limit_by] => table: 0x0dd5f408 {
+                                                                               [type] => "string"
+                                                                               [enum] => table: 0x0dd5f670 {
+                                                                                           [1] => "consumer"
+                                                                                           [2] => "credential"
+                                                                                           [3] => "ip"
+                                                                                         }
+                                                                               [default] => "consumer"
+                                                                             }
+                                                               [policy] => table: 0x0dd5f408 {
+                                                                             [type] => "string"
+                                                                             [enum] => table: 0x0dd5f750 {
+                                                                                         [1] => "local"
+                                                                                         [2] => "cluster"
+                                                                                         [3] => "redis"
+                                                                                       }
+                                                                             [default] => "cluster"
+                                                                           }
+                                                               [redis_database] => table: 0x0dd5f408 {
+                                                                                     [type] => "number"
+                                                                                     [default] => 0
+                                                                                   }
+                                                               [hour] => table: 0x0dd5f408 {
+                                                                           [type] => "number"
+                                                                         }
+                                                               [month] => table: 0x0dd5f408 {
+                                                                            [type] => "number"
+                                                                          }
+                                                               [redis_port] => table: 0x0dd5f408 {
+                                                                                 [type] => "number"
+                                                                                 [default] => 6379
+                                                                               }
+                                                               [day] => table: 0x0dd5f408 {
+                                                                          [type] => "number"
+                                                                        }
+                                                               [minute] => table: 0x0dd5f408 {
+                                                                             [type] => "number"
+                                                                           }
+                                                               [second] => table: 0x0dd5f408 {
+                                                                             [type] => "number"
+                                                                           }
+                                                               [redis_host] => table: 0x0dd5f408 {
+                                                                                 [type] => "string"
+                                                                               }
+                                                               [redis_timeout] => table: 0x0dd5f408 {
+                                                                                    [type] => "number"
+                                                                                    [default] => 2000
+                                                                                  }
+                                                               [redis_password] => table: 0x0dd5f408 {
+                                                                                     [type] => "string"
+                                                                                   }
+                                                               [fault_tolerant] => table: 0x0dd5f408 {
+                                                                                     [type] => "boolean"
+                                                                                     [default] => true
+                                                                                   }
+                                                               [year] => table: 0x0dd5f408 {
+                                                                           [type] => "number"
+                                                                         }
+                                                             }
+                                                 [self_check] => function: 0x0dd602d0
+                                               }
+                                 }
+                         [13] => table: 0x0dce0378 {
+                                   [handler] => table: 0x0de6f680 {                                                  *Object
+                                                }
+                                   [name] => "response-ratelimiting"
+                                   [schema] => table: 0x0de6f680 {
+                                                 [fields] => table: 0x0de6bfb8 {
+                                                               [limit_by] => table: 0x0de6c018 {
+                                                                               [type] => "string"
+                                                                               [enum] => table: 0x0de6da68 {
+                                                                                           [1] => "consumer"
+                                                                                           [2] => "credential"
+                                                                                           [3] => "ip"
+                                                                                         }
+                                                                               [default] => "consumer"
+                                                                             }
+                                                               [policy] => table: 0x0de6c018 {
+                                                                             [type] => "string"
+                                                                             [enum] => table: 0x0de6ec78 {
+                                                                                         [1] => "local"
+                                                                                         [2] => "cluster"
+                                                                                         [3] => "redis"
+                                                                                       }
+                                                                             [default] => "cluster"
+                                                                           }
+                                                               [redis_database] => table: 0x0de6c018 {
+                                                                                     [type] => "number"
+                                                                                     [default] => 0
+                                                                                   }
+                                                               [limits] => table: 0x0de6c018 {
+                                                                             [type] => "table"
+                                                                             [schema] => table: 0x0de6d140 {
+                                                                                           [flexible] => true
+                                                                                           [fields] => table: 0x0de6d1a0 {
+                                                                                                         [day] => table: 0x0de6d200 {
+                                                                                                                    [type] => "number"
+                                                                                                                  }
+                                                                                                         [minute] => table: 0x0de6d200 {
+                                                                                                                       [type] => "number"
+                                                                                                                     }
+                                                                                                         [second] => table: 0x0de6d200 {
+                                                                                                                       [type] => "number"
+                                                                                                                     }
+                                                                                                         [hour] => table: 0x0de6d200 {
+                                                                                                                     [type] => "number"
+                                                                                                                   }
+                                                                                                         [month] => table: 0x0de6d200 {
+                                                                                                                      [type] => "number"
+                                                                                                                    }
+                                                                                                         [year] => table: 0x0de6d200 {
+                                                                                                                     [type] => "number"
+                                                                                                                   }
+                                                                                                       }
+                                                                                         }
+                                                                           }
+                                                               [redis_password] => table: 0x0de6c018 {
+                                                                                     [type] => "string"
+                                                                                   }
+                                                               [redis_port] => table: 0x0de6c018 {
+                                                                                 [type] => "number"
+                                                                                 [default] => 6379
+                                                                               }
+                                                               [header_name] => table: 0x0de6c018 {
+                                                                                  [type] => "string"
+                                                                                  [default] => "x-kong-limit"
+                                                                                }
+                                                               [redis_host] => table: 0x0de6c018 {
+                                                                                 [type] => "string"
+                                                                               }
+                                                               [block_on_first_violation] => table: 0x0de6c018 {
+                                                                                               [type] => "boolean"
+                                                                                               [default] => false
+                                                                                             }
+                                                               [fault_tolerant] => table: 0x0de6c018 {
+                                                                                     [type] => "boolean"
+                                                                                     [default] => true
+                                                                                   }
+                                                               [redis_timeout] => table: 0x0de6c018 {
+                                                                                    [type] => "number"
+                                                                                    [default] => 2000
+                                                                                  }
+                                                             }
+                                                 [self_check] => function: 0x0de6f5f8
+                                               }
+                                 }
+                         [14] => table: 0x0dce0378 {
+                                   [handler] => table: 0x0dd965e0 {                                                  *Object
+                                                }
+                                   [name] => "request-transformer"
+                                   [schema] => table: 0x0dd965e0 {
+                                                 [fields] => table: 0x0dd93468 {
+                                                               [replace] => table: 0x0dd934c8 {
+                                                                              [type] => "table"
+                                                                              [schema] => table: 0x0dd95b38 {
+                                                                                            [fields] => table: 0x0dd95b98 {
+                                                                                                          [body] => table: 0x0dd95bf8 {
+                                                                                                                      [type] => "array"
+                                                                                                                      [func] => function: 0x0dd931e8
+                                                                                                                      [default] => table: 0x0dd95c88 {
+                                                                                                                                   }
+                                                                                                                    }
+                                                                                                          [querystring] => table: 0x0dd95bf8 {
+                                                                                                                             [type] => "array"
+                                                                                                                             [func] => function: 0x0dd931e8
+                                                                                                                             [default] => table: 0x0dd95df8 {
+                                                                                                                                          }
+                                                                                                                           }
+                                                                                                          [headers] => table: 0x0dd95bf8 {
+                                                                                                                         [type] => "array"
+                                                                                                                         [func] => function: 0x0dd931e8
+                                                                                                                         [default] => table: 0x0dd95d40 {
+                                                                                                                                      }
+                                                                                                                       }
+                                                                                                        }
+                                                                                          }
+                                                                            }
+                                                               [rename] => table: 0x0dd934c8 {
+                                                                             [type] => "table"
+                                                                             [schema] => table: 0x0dd93518 {
+                                                                                           [fields] => table: 0x0dd958b0 {
+                                                                                                         [body] => table: 0x0dd95910 {
+                                                                                                                     [type] => "array"
+                                                                                                                     [default] => table: 0x0dd959a0 {
+                                                                                                                                  }
+                                                                                                                   }
+                                                                                                         [querystring] => table: 0x0dd95910 {
+                                                                                                                            [type] => "array"
+                                                                                                                            [default] => table: 0x0dd95ab0 {
+                                                                                                                                         }
+                                                                                                                          }
+                                                                                                         [headers] => table: 0x0dd95910 {
+                                                                                                                        [type] => "array"
+                                                                                                                        [default] => table: 0x0dd95a28 {
+                                                                                                                                     }
+                                                                                                                      }
+                                                                                                       }
+                                                                                         }
+                                                                           }
+                                                               [append] => table: 0x0dd934c8 {
+                                                                             [type] => "table"
+                                                                             [schema] => table: 0x0dd96228 {
+                                                                                           [fields] => table: 0x0dd96288 {
+                                                                                                         [body] => table: 0x0dd962e8 {
+                                                                                                                     [type] => "array"
+                                                                                                                     [func] => function: 0x0dd931e8
+                                                                                                                     [default] => table: 0x0dd96378 {
+                                                                                                                                  }
+                                                                                                                   }
+                                                                                                         [querystring] => table: 0x0dd962e8 {
+                                                                                                                            [type] => "array"
+                                                                                                                            [func] => function: 0x0dd931e8
+                                                                                                                            [default] => table: 0x0dd964e8 {
+                                                                                                                                         }
+                                                                                                                          }
+                                                                                                         [headers] => table: 0x0dd962e8 {
+                                                                                                                        [type] => "array"
+                                                                                                                        [func] => function: 0x0dd931e8
+                                                                                                                        [default] => table: 0x0dd96430 {
+                                                                                                                                     }
+                                                                                                                      }
+                                                                                                       }
+                                                                                         }
+                                                                           }
+                                                               [add] => table: 0x0dd934c8 {
+                                                                          [type] => "table"
+                                                                          [schema] => table: 0x0dd95eb0 {
+                                                                                        [fields] => table: 0x0dd95f10 {
+                                                                                                      [body] => table: 0x0dd95f70 {
+                                                                                                                  [type] => "array"
+                                                                                                                  [func] => function: 0x0dd931e8
+                                                                                                                  [default] => table: 0x0dd96000 {
+                                                                                                                               }
+                                                                                                                }
+                                                                                                      [querystring] => table: 0x0dd95f70 {
+                                                                                                                         [type] => "array"
+                                                                                                                         [func] => function: 0x0dd931e8
+                                                                                                                         [default] => table: 0x0dd96170 {
+                                                                                                                                      }
+                                                                                                                       }
+                                                                                                      [headers] => table: 0x0dd95f70 {
+                                                                                                                     [type] => "array"
+                                                                                                                     [func] => function: 0x0dd931e8
+                                                                                                                     [default] => table: 0x0dd960b8 {
+                                                                                                                                  }
+                                                                                                                   }
+                                                                                                    }
+                                                                                      }
+                                                                        }
+                                                               [http_method] => table: 0x0dd934c8 {
+                                                                                  [type] => "string"
+                                                                                  [func] => function: 0x0dd93448
+                                                                                }
+                                                               [remove] => table: 0x0dd934c8 {
+                                                                             [type] => "table"
+                                                                             [schema] => table: 0x0dd94d68 {
+                                                                                           [fields] => table: 0x0dd94dc8 {
+                                                                                                         [body] => table: 0x0dd94e28 {
+                                                                                                                     [type] => "array"
+                                                                                                                     [default] => table: 0x0dd94eb8 {
+                                                                                                                                  }
+                                                                                                                   }
+                                                                                                         [querystring] => table: 0x0dd94e28 {
+                                                                                                                            [type] => "array"
+                                                                                                                            [default] => table: 0x0dd94fc8 {
+                                                                                                                                         }
+                                                                                                                          }
+                                                                                                         [headers] => table: 0x0dd94e28 {
+                                                                                                                        [type] => "array"
+                                                                                                                        [default] => table: 0x0dd94f40 {
+                                                                                                                                     }
+                                                                                                                      }
+                                                                                                       }
+                                                                                         }
+                                                                           }
+                                                             }
+                                               }
+                                 }
+                         [15] => table: 0x0dce0378 {
+                                   [handler] => table: 0x0ddb0cc0 {                                                  *Object
+                                                }
+                                   [name] => "response-transformer"
+                                   [schema] => table: 0x0ddb0cc0 {
+                                                 [fields] => table: 0x0ddaf958 {
+                                                               [replace] => table: 0x0ddaf9b8 {
+                                                                              [type] => "table"
+                                                                              [schema] => table: 0x0ddb0278 {
+                                                                                            [fields] => table: 0x0ddb02d8 {
+                                                                                                          [headers] => table: 0x0ddb0338 {
+                                                                                                                         [type] => "array"
+                                                                                                                         [func] => function: 0x0ddae390
+                                                                                                                         [default] => table: 0x0ddb0450 {
+                                                                                                                                      }
+                                                                                                                       }
+                                                                                                          [json] => table: 0x0ddb0338 {
+                                                                                                                      [type] => "array"
+                                                                                                                      [func] => function: 0x0ddae390
+                                                                                                                      [default] => table: 0x0ddb0398 {
+                                                                                                                                   }
+                                                                                                                    }
+                                                                                                        }
+                                                                                          }
+                                                                            }
+                                                               [add] => table: 0x0ddaf9b8 {
+                                                                          [type] => "table"
+                                                                          [schema] => table: 0x0ddb0508 {
+                                                                                        [fields] => table: 0x0ddb0568 {
+                                                                                                      [headers] => table: 0x0ddb05c8 {
+                                                                                                                     [type] => "array"
+                                                                                                                     [func] => function: 0x0ddae390
+                                                                                                                     [default] => table: 0x0ddb0938 {
+                                                                                                                                  }
+                                                                                                                   }
+                                                                                                      [json] => table: 0x0ddb05c8 {
+                                                                                                                  [type] => "array"
+                                                                                                                  [func] => function: 0x0ddae390
+                                                                                                                  [default] => table: 0x0ddb0880 {
+                                                                                                                               }
+                                                                                                                }
+                                                                                                    }
+                                                                                      }
+                                                                        }
+                                                               [remove] => table: 0x0ddaf9b8 {
+                                                                             [type] => "table"
+                                                                             [schema] => table: 0x0ddafa48 {
+                                                                                           [fields] => table: 0x0ddafaa8 {
+                                                                                                         [headers] => table: 0x0ddaed20 {
+                                                                                                                        [type] => "array"
+                                                                                                                        [default] => table: 0x0ddb01f0 {
+                                                                                                                                     }
+                                                                                                                      }
+                                                                                                         [json] => table: 0x0ddaed20 {
+                                                                                                                     [type] => "array"
+                                                                                                                     [default] => table: 0x0ddaed80 {
+                                                                                                                                  }
+                                                                                                                   }
+                                                                                                       }
+                                                                                         }
+                                                                           }
+                                                               [append] => table: 0x0ddaf9b8 {
+                                                                             [type] => "table"
+                                                                             [schema] => table: 0x0ddb09f0 {
+                                                                                           [fields] => table: 0x0ddb0a50 {
+                                                                                                         [headers] => table: 0x0ddb0ab0 {
+                                                                                                                        [type] => "array"
+                                                                                                                        [func] => function: 0x0ddae390
+                                                                                                                        [default] => table: 0x0ddb0bc8 {
+                                                                                                                                     }
+                                                                                                                      }
+                                                                                                         [json] => table: 0x0ddb0ab0 {
+                                                                                                                     [type] => "array"
+                                                                                                                     [func] => function: 0x0ddae390
+                                                                                                                     [default] => table: 0x0ddb0b10 {
+                                                                                                                                  }
+                                                                                                                   }
+                                                                                                       }
+                                                                                         }
+                                                                           }
+                                                             }
+                                               }
+                                 }
+                         [16] => table: 0x0dce0378 {
+                                   [handler] => table: 0x0de50398 {                                                  *Object
+                                                }
+                                   [name] => "aws-lambda"
+                                   [schema] => table: 0x0de50398 {
+                                                 [fields] => table: 0x0de4ea30 {
+                                                               [aws_secret] => table: 0x0de4f148 {
+                                                                                 [type] => "string"
+                                                                                 [required] => true
+                                                                               }
+                                                               [timeout] => table: 0x0de4f148 {
+                                                                              [type] => "number"
+                                                                              [required] => true
+                                                                              [default] => 60000
+                                                                            }
+                                                               [function_name] => table: 0x0de4f148 {
+                                                                                    [type] => "string"
+                                                                                    [required] => true
+                                                                                  }
+                                                               [aws_key] => table: 0x0de4f148 {
+                                                                              [type] => "string"
+                                                                              [required] => true
+                                                                            }
+                                                               [aws_region] => table: 0x0de4f148 {
+                                                                                 [type] => "string"
+                                                                                 [required] => true
+                                                                                 [enum] => table: 0x0de4ffa8 {
+                                                                                             [1] => "us-east-1"
+                                                                                             [2] => "us-east-2"
+                                                                                             [3] => "ap-northeast-1"
+                                                                                             [4] => "ap-northeast-2"
+                                                                                             [5] => "us-west-2"
+                                                                                             [6] => "ap-southeast-1"
+                                                                                             [7] => "ap-southeast-2"
+                                                                                             [8] => "eu-central-1"
+                                                                                             [9] => "eu-west-1"
+                                                                                           }
+                                                                               }
+                                                               [log_type] => table: 0x0de4f148 {
+                                                                               [type] => "string"
+                                                                               [required] => true
+                                                                               [enum] => table: 0x0de50290 {
+                                                                                           [1] => "Tail"
+                                                                                           [2] => "None"
+                                                                                         }
+                                                                               [default] => "Tail"
+                                                                             }
+                                                               [invocation_type] => table: 0x0de4f148 {
+                                                                                      [type] => "string"
+                                                                                      [required] => true
+                                                                                      [enum] => table: 0x0de501b0 {
+                                                                                                  [1] => "RequestResponse"
+                                                                                                  [2] => "Event"
+                                                                                                  [3] => "DryRun"
+                                                                                                }
+                                                                                      [default] => "RequestResponse"
+                                                                                    }
+                                                               [keepalive] => table: 0x0de4f148 {
+                                                                                [type] => "number"
+                                                                                [required] => true
+                                                                                [default] => 60000
+                                                                              }
+                                                               [qualifier] => table: 0x0de4f148 {
+                                                                                [type] => "string"
+                                                                              }
+                                                             }
+                                               }
+                                 }
+                         [17] => table: 0x0dce0378 {
+                                   [handler] => table: 0x0de2dc20 {                                                  *Object
+                                                }
+                                   [name] => "datadog"
+                                   [schema] => table: 0x0de2dc20 {
+                                                 [fields] => table: 0x0de2bc58 {
+                                                               [host] => table: 0x0de2ba78 {
+                                                                           [type] => "string"
+                                                                           [required] => true
+                                                                           [default] => "localhost"
+                                                                         }
+                                                               [tags] => table: 0x0de2ba78 {
+                                                                           [type] => "table"
+                                                                           [schema] => table: 0x0de2d1e0 {
+                                                                                         [fields] => table: 0x0de2d240 {
+                                                                                                       [latency] => table: 0x0de2d2a0 {
+                                                                                                                      [type] => "array"
+                                                                                                                      [func] => function: 0x0de2bc30
+                                                                                                                      [default] => table: 0x0de2bb90 {
+                                                                                                                                   }
+                                                                                                                    }
+                                                                                                       [request_per_user] => table: 0x0de2d2a0 {
+                                                                                                                               [type] => "array"
+                                                                                                                               [func] => function: 0x0de2bc30
+                                                                                                                               [default] => table: 0x0de2da20 {
+                                                                                                                                            }
+                                                                                                                             }
+                                                                                                       [upstream_latency] => table: 0x0de2d2a0 {
+                                                                                                                               [type] => "array"
+                                                                                                                               [func] => function: 0x0de2bc30
+                                                                                                                               [default] => table: 0x0de2dad8 {
+                                                                                                                                            }
+                                                                                                                             }
+                                                                                                       [request_count] => table: 0x0de2d2a0 {
+                                                                                                                            [type] => "array"
+                                                                                                                            [func] => function: 0x0de2bc30
+                                                                                                                            [default] => table: 0x0de2d390 {
+                                                                                                                                         }
+                                                                                                                          }
+                                                                                                       [request_size] => table: 0x0de2d2a0 {
+                                                                                                                           [type] => "array"
+                                                                                                                           [func] => function: 0x0de2bc30
+                                                                                                                           [default] => table: 0x0de2d740 {
+                                                                                                                                        }
+                                                                                                                         }
+                                                                                                       [unique_users] => table: 0x0de2d2a0 {
+                                                                                                                           [type] => "array"
+                                                                                                                           [func] => function: 0x0de2bc30
+                                                                                                                           [default] => table: 0x0de2d968 {
+                                                                                                                                        }
+                                                                                                                         }
+                                                                                                       [response_size] => table: 0x0de2d2a0 {
+                                                                                                                            [type] => "array"
+                                                                                                                            [func] => function: 0x0de2bc30
+                                                                                                                            [default] => table: 0x0de2d8b0 {
+                                                                                                                                         }
+                                                                                                                          }
+                                                                                                       [status_count] => table: 0x0de2d2a0 {
+                                                                                                                           [type] => "array"
+                                                                                                                           [func] => function: 0x0de2bc30
+                                                                                                                           [default] => table: 0x0de2d7f8 {
+                                                                                                                                        }
+                                                                                                                         }
+                                                                                                     }
+                                                                                       }
+                                                                         }
+                                                               [timeout] => table: 0x0de2ba78 {
+                                                                              [type] => "number"
+                                                                              [default] => 10000
+                                                                            }
+                                                               [metrics] => table: 0x0de2ba78 {
+                                                                              [type] => "array"
+                                                                              [required] => true
+                                                                              [enum] => table: 0x0de2d150 {
+                                                                                          [1] => "request_count"
+                                                                                          [2] => "latency"
+                                                                                          [3] => "request_size"
+                                                                                          [4] => "status_count"
+                                                                                          [5] => "response_size"
+                                                                                          [6] => "unique_users"
+                                                                                          [7] => "request_per_user"
+                                                                                          [8] => "upstream_latency"
+                                                                                        }
+                                                                              [default] => table: 0x0de2d150 {                                                                                             *table: 0x0de2c658
+                                                                                           }
+                                                                            }
+                                                               [port] => table: 0x0de2ba78 {
+                                                                           [type] => "number"
+                                                                           [required] => true
+                                                                           [default] => 8125
+                                                                         }
+                                                             }
+                                               }
+                                 }
+                         [18] => table: 0x0dce0378 {
+                                   [handler] => table: 0x0de5a7a8 {                                                  *Object
+                                                }
+                                   [name] => "statsd"
+                                   [schema] => table: 0x0de5a7a8 {
+                                                 [fields] => table: 0x0de59c60 {
+                                                               [host] => table: 0x0de59fa0 {
+                                                                           [type] => "string"
+                                                                           [required] => true
+                                                                           [default] => "localhost"
+                                                                         }
+                                                               [timeout] => table: 0x0de59fa0 {
+                                                                              [type] => "number"
+                                                                              [default] => 10000
+                                                                            }
+                                                               [metrics] => table: 0x0de59fa0 {
+                                                                              [type] => "array"
+                                                                              [required] => true
+                                                                              [enum] => table: 0x0de5a688 {
+                                                                                          [1] => "request_count"
+                                                                                          [2] => "latency"
+                                                                                          [3] => "request_size"
+                                                                                          [4] => "status_count"
+                                                                                          [5] => "response_size"
+                                                                                          [6] => "unique_users"
+                                                                                          [7] => "request_per_user"
+                                                                                          [8] => "upstream_latency"
+                                                                                        }
+                                                                              [default] => table: 0x0de5a688 {                                                                                             *table: 0x0de59cc0
+                                                                                           }
+                                                                            }
+                                                               [port] => table: 0x0de59fa0 {
+                                                                           [type] => "number"
+                                                                           [required] => true
+                                                                           [default] => 8125
+                                                                         }
+                                                             }
+                                               }
+                                 }
+                         [19] => table: 0x0dce0378 {
+                                   [handler] => table: 0x0dda4fb8 {                                                  *Object
+                                                }
+                                   [name] => "loggly"
+                                   [schema] => table: 0x0dda4fb8 {
+                                                 [fields] => table: 0x0dda39c8 {
+                                                               [timeout] => table: 0x0dda3f88 {
+                                                                              [type] => "number"
+                                                                              [default] => 10000
+                                                                            }
+                                                               [host] => table: 0x0dda3f88 {
+                                                                           [type] => "string"
+                                                                           [default] => "logs-01.loggly.com"
+                                                                         }
+                                                               [client_errors_severity] => table: 0x0dda3f88 {
+                                                                                             [type] => "string"
+                                                                                             [enum] => table: 0x0dda4e08 {
+                                                                                                         [1] => "debug"
+                                                                                                         [2] => "info"
+                                                                                                         [3] => "notice"
+                                                                                                         [4] => "warning"
+                                                                                                         [5] => "err"
+                                                                                                         [6] => "crit"
+                                                                                                         [7] => "alert"
+                                                                                                         [8] => "emerg"
+                                                                                                       }
+                                                                                             [default] => "info"
+                                                                                           }
+                                                               [log_level] => table: 0x0dda3f88 {
+                                                                                [type] => "string"
+                                                                                [enum] => table: 0x0dda4ce8 {                                                                                            *table: 0x0dda3ee0
+                                                                                          }
+                                                                                [default] => "info"
+                                                                              }
+                                                               [key] => table: 0x0dda3f88 {
+                                                                          [type] => "string"
+                                                                          [required] => true
+                                                                        }
+                                                               [tags] => table: 0x0dda3f88 {
+                                                                           [type] => "array"
+                                                                           [default] => table: 0x0dda3a88 {
+                                                                                          [1] => "kong"
+                                                                                        }
+                                                                         }
+                                                               [successful_severity] => table: 0x0dda3f88 {
+                                                                                          [type] => "string"
+                                                                                          [enum] => table: 0x0dda4d78 {                                                                                                      *table: 0x0dda3ee0
+                                                                                                    }
+                                                                                          [default] => "info"
+                                                                                        }
+                                                               [server_errors_severity] => table: 0x0dda3f88 {
+                                                                                             [type] => "string"
+                                                                                             [enum] => table: 0x0dda4e98 {                                                                                                         *table: 0x0dda3ee0
+                                                                                                       }
+                                                                                             [default] => "info"
+                                                                                           }
+                                                               [port] => table: 0x0dda3f88 {
+                                                                           [type] => "number"
+                                                                           [default] => 514
+                                                                         }
+                                                             }
+                                               }
+                                 }
+                         [20] => table: 0x0dce0378 {
+                                   [handler] => table: 0x0dd00e98 {                                                  *Object
+                                                }
+                                   [name] => "syslog"
+                                   [schema] => table: 0x0dd00e98 {
+                                                 [fields] => table: 0x0dcff9f0 {
+                                                               [client_errors_severity] => table: 0x0dd002b8 {
+                                                                                             [type] => "string"
+                                                                                             [enum] => table: 0x0dd005e0 {
+                                                                                                         [1] => "debug"
+                                                                                                         [2] => "info"
+                                                                                                         [3] => "notice"
+                                                                                                         [4] => "warning"
+                                                                                                         [5] => "err"
+                                                                                                         [6] => "crit"
+                                                                                                         [7] => "alert"
+                                                                                                         [8] => "emerg"
+                                                                                                       }
+                                                                                             [default] => "info"
+                                                                                           }
+                                                               [server_errors_severity] => table: 0x0dd002b8 {
+                                                                                             [type] => "string"
+                                                                                             [enum] => table: 0x0dd00dd8 {                                                                                                         *table: 0x0dd00340
+                                                                                                       }
+                                                                                             [default] => "info"
+                                                                                           }
+                                                               [log_level] => table: 0x0dd002b8 {
+                                                                                [type] => "string"
+                                                                                [enum] => table: 0x0dd00b78 {                                                                                            *table: 0x0dd00340
+                                                                                          }
+                                                                                [default] => "info"
+                                                                              }
+                                                               [successful_severity] => table: 0x0dd002b8 {
+                                                                                          [type] => "string"
+                                                                                          [enum] => table: 0x0dd005b8 {                                                                                                      *table: 0x0dd00340
+                                                                                                    }
+                                                                                          [default] => "info"
+                                                                                        }
+                                                             }
+                                               }
+                                 }
+                         [21] => table: 0x0dce0378 {
+                                   [handler] => table: 0x0dd9d498 {                                                  *Object
+                                                }
+                                   [name] => "http-log"
+                                   [schema] => table: 0x0dd9d498 {
+                                                 [fields] => table: 0x0dd9c608 {
+                                                               [method] => table: 0x0dd9cae0 {
+                                                                             [enum] => table: 0x0dd9d258 {
+                                                                                         [1] => "POST"
+                                                                                         [2] => "PUT"
+                                                                                         [3] => "PATCH"
+                                                                                       }
+                                                                             [default] => "POST"
+                                                                           }
+                                                               [content_type] => table: 0x0dd9cae0 {
+                                                                                   [enum] => table: 0x0dd9d308 {
+                                                                                               [1] => "application/json"
+                                                                                             }
+                                                                                   [default] => "application/json"
+                                                                                 }
+                                                               [keepalive] => table: 0x0dd9cae0 {
+                                                                                [type] => "number"
+                                                                                [default] => 60000
+                                                                              }
+                                                               [timeout] => table: 0x0dd9cae0 {
+                                                                              [type] => "number"
+                                                                              [default] => 10000
+                                                                            }
+                                                               [http_endpoint] => table: 0x0dd9cae0 {
+                                                                                    [type] => "url"
+                                                                                    [required] => true
+                                                                                  }
+                                                             }
+                                               }
+                                 }
+                         [22] => table: 0x0dce0378 {
+                                   [handler] => table: 0x0de11480 {                                                  *Object
+                                                }
+                                   [name] => "file-log"
+                                   [schema] => table: 0x0de11480 {
+                                                 [fields] => table: 0x0de11848 {
+                                                               [path] => table: 0x0de11870 {
+                                                                           [type] => "string"
+                                                                           [required] => true
+                                                                           [func] => function: 0x0de117e0
+                                                                         }
+                                                             }
+                                               }
+                                 }
+                         [23] => table: 0x0dce0378 {
+                                   [handler] => table: 0x0dd84000 {                                                  *Object
+                                                }
+                                   [name] => "runscope"
+                                   [schema] => table: 0x0dd84000 {
+                                                 [fields] => table: 0x0dd83388 {
+                                                               [access_token] => table: 0x0dd83640 {
+                                                                                   [type] => "string"
+                                                                                   [required] => true
+                                                                                   [default] => ""
+                                                                                 }
+                                                               [log_body] => table: 0x0dd83640 {
+                                                                               [type] => "boolean"
+                                                                               [default] => false
+                                                                             }
+                                                               [api_endpoint] => table: 0x0dd83640 {
+                                                                                   [type] => "url"
+                                                                                   [required] => true
+                                                                                   [default] => "https://api.runscope.com"
+                                                                                 }
+                                                               [keepalive] => table: 0x0dd83640 {
+                                                                                [type] => "number"
+                                                                                [default] => 30
+                                                                              }
+                                                               [timeout] => table: 0x0dd83640 {
+                                                                              [type] => "number"
+                                                                              [default] => 10000
+                                                                            }
+                                                               [bucket_key] => table: 0x0dd83640 {
+                                                                                 [type] => "string"
+                                                                                 [required] => true
+                                                                               }
+                                                             }
+                                               }
+                                 }
+                         [24] => table: 0x0dce0378 {
+                                   [handler] => table: 0x0de02da8 {                                                  *Object
+                                                }
+                                   [name] => "udp-log"
+                                   [schema] => table: 0x0de02da8 {
+                                                 [fields] => table: 0x0de02710 {
+                                                               [host] => table: 0x0de02b00 {
+                                                                           [type] => "string"
+                                                                           [required] => true
+                                                                         }
+                                                               [timeout] => table: 0x0de02b00 {
+                                                                              [type] => "number"
+                                                                              [default] => 10000
+                                                                            }
+                                                               [port] => table: 0x0de02b00 {
+                                                                           [type] => "number"
+                                                                           [required] => true
+                                                                         }
+                                                             }
+                                               }
+                                 }
+                         [25] => table: 0x0dce0378 {
+                                   [handler] => table: 0x0ddfdb60 {                                                  *Object
+                                                }
+                                   [name] => "galileo"
+                                   [schema] => table: 0x0ddfdb60 {
+                                                 [fields] => table: 0x0ddfc650 {
+                                                               [https] => table: 0x0ddfcc58 {
+                                                                            [type] => "boolean"
+                                                                            [default] => true
+                                                                          }
+                                                               [https_verify] => table: 0x0ddfcc58 {
+                                                                                   [type] => "boolean"
+                                                                                   [default] => false
+                                                                                 }
+                                                               [service_token] => table: 0x0ddfcc58 {
+                                                                                    [type] => "string"
+                                                                                    [required] => true
+                                                                                  }
+                                                               [host] => table: 0x0ddfcc58 {
+                                                                           [type] => "string"
+                                                                           [required] => true
+                                                                           [default] => "collector.galileo.mashape.com"
+                                                                         }
+                                                               [log_bodies] => table: 0x0ddfcc58 {
+                                                                                 [type] => "boolean"
+                                                                                 [default] => false
+                                                                               }
+                                                               [connection_timeout] => table: 0x0ddfcc58 {
+                                                                                         [type] => "number"
+                                                                                         [default] => 30
+                                                                                       }
+                                                               [port] => table: 0x0ddfcc58 {
+                                                                           [type] => "number"
+                                                                           [required] => true
+                                                                           [default] => 443
+                                                                         }
+                                                               [queue_size] => table: 0x0ddfcc58 {
+                                                                                 [type] => "number"
+                                                                                 [default] => 1000
+                                                                               }
+                                                               [flush_timeout] => table: 0x0ddfcc58 {
+                                                                                    [type] => "number"
+                                                                                    [default] => 2
+                                                                                  }
+                                                               [environment] => table: 0x0ddfcc58 {
+                                                                                  [type] => "string"
+                                                                                }
+                                                               [retry_count] => table: 0x0ddfcc58 {
+                                                                                  [type] => "number"
+                                                                                  [default] => 10
+                                                                                }
+                                                             }
+                                               }
+                                 }
+                         [26] => table: 0x0dce0378 {
+                                   [handler] => table: 0x0ddbdff8 {                                                  *Object
+                                                }
+                                   [name] => "tcp-log"
+                                   [schema] => table: 0x0ddbdff8 {
+                                                 [fields] => table: 0x0ddbd6f8 {
+                                                               [host] => table: 0x0ddbdab0 {
+                                                                           [type] => "string"
+                                                                           [required] => true
+                                                                         }
+                                                               [keepalive] => table: 0x0ddbdab0 {
+                                                                                [type] => "number"
+                                                                                [default] => 60000
+                                                                              }
+                                                               [timeout] => table: 0x0ddbdab0 {
+                                                                              [type] => "number"
+                                                                              [default] => 10000
+                                                                            }
+                                                               [port] => table: 0x0ddbdab0 {
+                                                                           [type] => "number"
+                                                                           [required] => true
+                                                                         }
+                                                             }
+                                               }
+                                 }
+                         [27] => table: 0x0dce0378 {
+                                   [handler] => table: 0x0dd66ca0 {                                                  *Object
+                                                }
+                                   [name] => "correlation-id"
+                                   [schema] => table: 0x0dd66ca0 {
+                                                 [fields] => table: 0x0dd66318 {
+                                                               [header_name] => table: 0x0dd66730 {
+                                                                                  [type] => "string"
+                                                                                  [default] => "Kong-Request-ID"
+                                                                                }
+                                                               [echo_downstream] => table: 0x0dd66730 {
+                                                                                      [type] => "boolean"
+                                                                                      [default] => false
+                                                                                    }
+                                                               [generator] => table: 0x0dd66730 {
+                                                                                [type] => "string"
+                                                                                [enum] => table: 0x0dd66b28 {
+                                                                                            [1] => "uuid"
+                                                                                            [2] => "uuid#counter"
+                                                                                            [3] => "tracker"
+                                                                                          }
+                                                                                [default] => "uuid#counter"
+                                                                              }
+                                                             }
+                                               }
+                                 }
+                         [28] => table: 0x0dce0378 {
+                                   [name] => "reports"
+                                   [handler] => table: 0x0de7bc28 {
+                                                  [log] => function: 0x0cd7ecf8
+                                                  [send] => function: 0x0cda5660
+                                                  [init_worker] => function: 0x0cd7ecc8
+                                                  [toggle] => function: 0x0cd7ed28
+                                                }
+                                 }
+                       }
+   [events] => table: 0x0431a328 {                 *Object
+               }
+   [dao] => table: 0x0431a328 {
+              [db] => table: 0x0da04168 {
+                        [query_options] => table: 0x0da29910 {
+                                             [host] => "127.0.0.1"
+                                             [database] => "kong"
+                                             [ssl_verify] => false
+                                             [user] => "kong"
+                                             [ssl] => false
+                                             [port] => 5432
+                                           }
+                      }
+              [kong_config] => table: 0x0da04168 {
+                                 [nginx_acc_logs] => "/usr/local/kong/logs/access.log"
+                                 [cassandra_lb_policy] => "RoundRobin"
+                                 [lua_code_cache] => "on"
+                                 [serf_path] => "serf"
+                                 [nginx_kong_conf] => "/usr/local/kong/nginx-kong.conf"
+                                 [proxy_listen] => "0.0.0.0:8000"
+                                 [ssl_cert] => "/usr/local/kong/ssl/kong-default.crt"
+                                 [lua_ssl_verify_depth] => 1
+                                 [admin_listen] => "0.0.0.0:8001"
+                                 [admin_listen_ssl] => "0.0.0.0:8444"
+                                 [ssl_cert_default] => "/usr/local/kong/ssl/kong-default.crt"
+                                 [cassandra_repl_factor] => 1
+                                 [cluster_profile] => "wan"
+                                 [upstream_keepalive] => 60
+                                 [lua_package_cpath] => ""
+                                 [cassandra_consistency] => "ONE"
+                                 [admin_ssl_cert_default] => "/usr/local/kong/ssl/admin-kong-default.crt"
+                                 [pg_host] => "127.0.0.1"
+                                 [pg_port] => 5432
+                                 [cluster_ttl_on_failure] => 3600
+                                 [nginx_err_logs] => "/usr/local/kong/logs/error.log"
+                                 [plugins] => table: 0x0d9f65d8 {
+                                                [syslog] => true
+                                                [ldap-auth] => true
+                                                [rate-limiting] => true
+                                                [correlation-id] => true
+                                                [jwt] => true
+                                                [runscope] => true
+                                                [request-transformer] => true
+                                                [http-log] => true
+                                                [loggly] => true
+                                                [response-transformer] => true
+                                                [basic-auth] => true
+                                                [tcp-log] => true
+                                                [key-auth] => true
+                                                [oauth2] => true
+                                                [acl] => true
+                                                [galileo] => true
+                                                [udp-log] => true
+                                                [cors] => true
+                                                [file-log] => true
+                                                [ip-restriction] => true
+                                                [datadog] => true
+                                                [request-size-limiting] => true
+                                                [bot-detection] => true
+                                                [aws-lambda] => true
+                                                [statsd] => true
+                                                [response-ratelimiting] => true
+                                                [hmac-auth] => true
+                                              }
+                                 [nginx_optimizations] => true
+                                 [cassandra_keyspace] => "kong"
+                                 [cassandra_data_centers] => table: 0x0d9f65d8 {
+                                                               [1] => "dc1:2"
+                                                               [2] => "dc2:3"
+                                                             }
+                                 [ssl_cert_key] => "/usr/local/kong/ssl/kong-default.key"
+                                 [lua_package_path] => "?/init.lua;./kong/?.lua"
+                                 [cassandra_username] => "kong"
+                                 [admin_ssl] => true
+                                 [ssl_cert_key_default] => "/usr/local/kong/ssl/kong-default.key"
+                                 [anonymous_reports] => true
+                                 [kong_env] => "/usr/local/kong/.kong_env"
+                                 [serf_log] => "/usr/local/kong/logs/serf.log"
+                                 [log_level] => "notice"
+                                 [mem_cache_size] => "128m"
+                                 [nginx_worker_processes] => "auto"
+                                 [cassandra_contact_points] => table: 0x0d9f65d8 {
+                                                                 [1] => "127.0.0.1"
+                                                               }
+                                 [proxy_ip] => "0.0.0.0"
+                                 [pg_ssl] => false
+                                 [proxy_ssl_port] => 8443
+                                 [pg_database] => "kong"
+                                 [admin_ip] => "0.0.0.0"
+                                 [ssl_cert_csr_default] => "/usr/local/kong/ssl/kong-default.csr"
+                                 [nginx_conf] => "/usr/local/kong/nginx.conf"
+                                 [cassandra_port] => 9042
+                                 [serf_node_id] => "/usr/local/kong/serf/serf.id"
+                                 [nginx_pid] => "/usr/local/kong/pids/nginx.pid"
+                                 [nginx_admin_acc_logs] => "/usr/local/kong/logs/admin_access.log"
+                                 [admin_ssl_cert_csr_default] => "/usr/local/kong/ssl/admin-kong-default.csr"
+                                 [admin_port] => 8001
+                                 [proxy_listen_ssl] => "0.0.0.0:8443"
+                                 [cluster_listen] => "0.0.0.0:7946"
+                                 [admin_ssl_cert] => "/usr/local/kong/ssl/admin-kong-default.crt"
+                                 [dns_hostsfile] => "/etc/hosts"
+                                 [admin_ssl_cert_key_default] => "/usr/local/kong/ssl/admin-kong-default.key"
+                                 [admin_ssl_ip] => "0.0.0.0"
+                                 [admin_ssl_cert_key] => "/usr/local/kong/ssl/admin-kong-default.key"
+                                 [nginx_daemon] => "on"
+                                 [custom_plugins] => table: 0x0d9f65d8 {
+                                                     }
+                                 [cassandra_ssl] => false
+                                 [serf_pid] => "/usr/local/kong/pids/serf.pid"
+                                 [database] => "postgres"
+                                 [ssl] => true
+                                 [cassandra_timeout] => 5000
+                                 [pg_user] => "kong"
+                                 [lua_socket_pool_size] => 30
+                                 [pg_ssl_verify] => false
+                                 [cassandra_ssl_verify] => false
+                                 [prefix] => "/usr/local/kong"
+                                 [cassandra_repl_strategy] => "SimpleStrategy"
+                                 [dns_resolver] => table: 0x0d9f65d8 {
+                                                   }
+                                 [serf_event] => "/usr/local/kong/serf/serf_event.sh"
+                                 [proxy_ssl_ip] => "0.0.0.0"
+                                 [admin_ssl_port] => 8444
+                                 [proxy_port] => 8000
+                                 [cluster_listen_rpc] => "127.0.0.1:7373"
+                               }
+              [daos] => table: 0x0da04168 {
+                          [oauth2_credentials] => table: 0x0da04258 {                                                    *Object
+                                                  }
+                          [jwt_secrets] => table: 0x0da04258 {                                             *Object
+                                           }
+                          [upstreams] => table: 0x0da04258 {                                           *Object
+                                         }
+                          [keyauth_credentials] => table: 0x0da04258 {                                                     *Object
+                                                   }
+                          [oauth2_authorization_codes] => table: 0x0da04258 {                                                            *Object
+                                                          }
+                          [ssl_servers_names] => table: 0x0da04258 {                                                   *Object
+                                                 }
+                          [acls] => table: 0x0da04258 {                                      *Object
+                                    }
+                          [ssl_certificates] => table: 0x0da04258 {                                                  *Object
+                                                }
+                          [apis] => table: 0x0da04258 {                                      *Object
+                                    }
+                          [hmacauth_credentials] => table: 0x0da04258 {                                                      *Object
+                                                    }
+                          [consumers] => table: 0x0da04258 {                                           *Object
+                                         }
+                          [oauth2_tokens] => table: 0x0da04258 {                                               *Object
+                                             }
+                          [targets] => table: 0x0da04258 {                                         *Object
+                                       }
+                          [nodes] => table: 0x0da04258 {                                       *Object
+                                     }
+                          [basicauth_credentials] => table: 0x0da04258 {                                                       *Object
+                                                     }
+                          [plugins] => table: 0x0da04258 {                                         *Object
+                                       }
+                        }
+              [plugin_names] => table: 0x0da04168 {                                  *table: 0x0da011b8
+                                }
+              [db_type] => "postgres"
+              [additional_tables] => table: 0x0da04168 {
+                                       [1] => "ratelimiting_metrics"
+                                       [2] => "response_ratelimiting_metrics"
+                                     }
+            }
+   [serf] => table: 0x0431a328 {
+               [dao] => table: 0x0de7bc88 {                          *table: 0x0da04168
+                        }
+               [node_name] => "KuPing-DroiddeMac-mini.local_0.0.0.0:7946_84f93e8221ab4189b0dc385abc3dc5b9"
+               [config] => table: 0x0de7bc88 {                             *table: 0x0d9f65d8
+                           }
+             }
+   [configuration] => table: 0x0431a328 {                        *table: 0x0d9f65d8
+                      }
+}
