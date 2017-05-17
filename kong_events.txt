@@ -1,0 +1,25 @@
+Object {
+[_mediator] => Object {
+     [getSubscriber] => function: 0x0f080d38
+     [channel] => table: 0x0f0808e8 {
+            [getSubscriber] => function: 0x0f080bf8
+            [stopped] => false
+            [callbacks] => table: 0x0f0809d8 {
+                           }
+            [namespace] => "root"
+            [hasChannel] => function: 0x0f080c58
+            [publish] => function: 0x0f080cb8
+            [removeSubscriber] => function: 0x0f080c98
+            [setPriority] => function: 0x0f080c18
+            [channels] => table: 0x0f0809d8 {
+                          }
+            [getChannel] => function: 0x0f080c78
+            [addChannel] => function: 0x0f080c38
+            [addSubscriber] => function: 0x0f080bd8
+          }
+     [getChannel] => function: 0x0f080cf8
+     [publish] => function: 0x0f080d78
+     [removeSubscriber] => function: 0x0f080d58
+     [subscribe] => function: 0x0f080d18
+   }
+}
